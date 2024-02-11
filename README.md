@@ -12,26 +12,29 @@ pip install -r requirements.txt
 ```
 
 ### 1. Alignment Phrase
-The training data of LTE is avaliable [here](https://huggingface.co/datasets/YuxinJiang/LTE_train_data).
+Firstly, please download the training data of LTE from https://huggingface.co/datasets/YuxinJiang/LTE_train_data and put it into [data/](data/).
 
-The code for fine-tuning of LLaMA2-Chat-7B is based on [FastChat](https://github.com/lm-sys/FastChat).
-
+#### LLaMA2-Chat-7B
+The code is based on [FastChat](https://github.com/lm-sys/FastChat). Standard fine-tuning was conducted on a machine with 4×A100 80G GPUs for about 9 hours.
 ```bash
 cd LTE/
 bash FastChat/ft_train.sh
 ```
 
+To reduce the total memory footprint, LTE also supports [LoRA](https://arxiv.org/abs/2106.09685), which fine-tunes low-rank slices of the query, key, and value embedding heads.
 ```bash
 cd LTE/
 bash FastChat/lora_train.sh
 ```
-The code for fine-tuning of Qwen-Chat-7B is based on [Qwen](https://github.com/QwenLM/Qwen).
 
+#### Qwen-Chat-7B
+The code is based on [Qwen](https://github.com/QwenLM/Qwen). Standard fine-tuning was conducted on a machine with 4×A100 80G GPUs for about 9 hours.
 ```bash
 cd LTE/
 bash Qwen/finetune/finetune_ds.sh
 ```
 
+To reduce the total memory footprint, LTE also supports [LoRA](https://arxiv.org/abs/2106.09685), which fine-tunes low-rank slices of the query, key, and value embedding heads.
 ```bash
 cd LTE/
 bash Qwen/finetune/finetune_lora_single_gpu.sh
@@ -50,4 +53,18 @@ Please run the following command for experiments of Qwen-Chat-7B:
 ```bash
 cd LTE/
 bash EasyEdit/run_lte_qwen.sh
+```
+
+
+## 📝 Citation
+Please cite our paper if you use the data or code in this repo.
+```
+@misc{jiang2023followbench,
+      title={FollowBench: A Multi-level Fine-grained Constraints Following Benchmark for Large Language Models}, 
+      author={Yuxin Jiang and Yufei Wang and Xingshan Zeng and Wanjun Zhong and Liangyou Li and Fei Mi and Lifeng Shang and Xin Jiang and Qun Liu and Wei Wang},
+      year={2023},
+      eprint={2310.20410},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
