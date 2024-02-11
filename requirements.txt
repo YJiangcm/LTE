@@ -1,0 +1,15 @@
+torch==2.1.1
+torchvision==0.16.1
+torchaudio==2.1.1
+transformers==4.32.0
+accelerate
+tiktoken
+einops
+transformers_stream_generator==0.0.4
+scipy
+packaging
+ninja
+flash_attn==2.2.2
+peft
+deepspeed
+fschat[model_worker,webui]
