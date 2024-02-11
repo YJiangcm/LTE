@@ -2,6 +2,15 @@
 
 ## How to implement
 
+### Requirements
+**Note: Please use Python 3.10+ for LTE.**  To get started, simply install conda and run:
+```
+conda create -n LTE python=3.10
+conda activate LTE
+conda install pytorch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 pytorch-cuda=12.1 -c pytorch -c nvidia
+pip install -r requirements.txt
+```
+
 ### 1. Alignment Phrase
 The training data of LTE is avaliable [here](https://huggingface.co/datasets/YuxinJiang/LTE_train_data).
 
