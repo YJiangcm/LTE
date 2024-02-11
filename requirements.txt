@@ -1,6 +1,3 @@
-torch==2.1.1
-torchvision==0.16.1
-torchaudio==2.1.1
 transformers==4.32.0
 accelerate
 tiktoken
