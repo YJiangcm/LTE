@@ -1,39 +1,44 @@
 # Learning to Edit: Aligning LLM Behavior with Knowledge Editing
 
+## How to implement
 
+### 1. Alignment Phrase
 The training data of LTE is avaliable [here](https://huggingface.co/datasets/YuxinJiang/LTE_train_data).
 
 The code for fine-tuning of LLaMA2-Chat-7B is based on [FastChat](https://github.com/lm-sys/FastChat).
 
 ```bash
 cd LTE/
-sh FastChat/ft_train.sh
+bash FastChat/ft_train.sh
 ```
 
 ```bash
 cd LTE/
-sh FastChat/lora_train.sh
+bash FastChat/lora_train.sh
 ```
-
-Fine-tuning Qwen-Chat-7B https://github.com/QwenLM/Qwen
+The code for fine-tuning of Qwen-Chat-7B is based on [Qwen](https://github.com/QwenLM/Qwen).
 
 ```bash
 cd LTE/
-sh Qwen/finetune/finetune_ds.sh
-```
-
-```bash
-cd LTE/
-sh Qwen/finetune/finetune_lora_single_gpu.sh
-```
-
-
-```bash
-cd LTE/
-sh EasyEdit/run_lte_llama.sh
+bash Qwen/finetune/finetune_ds.sh
 ```
 
 ```bash
 cd LTE/
-sh EasyEdit/run_lte_qwen.sh
+bash Qwen/finetune/finetune_lora_single_gpu.sh
+```
+
+### 2. Inference Phrase
+The evaluation of our proposed LTE is based on [EasyEdit](https://github.com/zjunlp/EasyEdit).
+
+Please run the following command for experiments of LLaMA2-Chat-7B:
+```bash
+cd LTE/
+bash EasyEdit/run_lte_llama.sh
+```
+
+Please run the following command for experiments of Qwen-Chat-7B:
+```bash
+cd LTE/
+bash EasyEdit/run_lte_qwen.sh
 ```
