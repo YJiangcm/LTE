@@ -12,10 +12,10 @@ pip install -r requirements.txt
 ```
 
 ### 1. Alignment Phrase
-Firstly, please download the training data of LTE from https://huggingface.co/datasets/YuxinJiang/LTE_train_data and put it into [data/](data/).
+Firstly, please download the training data of LTE from [HuggingFace](https://huggingface.co/datasets/YuxinJiang/LTE_train_data) and put it into [data/](data/).
 
 #### LLaMA2-Chat-7B
-The code is based on [FastChat](https://github.com/lm-sys/FastChat). Standard fine-tuning was conducted on a machine with 4×A100 80G GPUs for about 9 hours.
+The code is based on [FastChat](https://github.com/lm-sys/FastChat). Standard fine-tuning was conducted on 4×A100 GPUs (80G) for about 9 hours.
 ```bash
 cd LTE/
 bash FastChat/ft_train.sh
@@ -28,7 +28,7 @@ bash FastChat/lora_train.sh
 ```
 
 #### Qwen-Chat-7B
-The code is based on [Qwen](https://github.com/QwenLM/Qwen). Standard fine-tuning was conducted on a machine with 4×A100 80G GPUs for about 9 hours.
+The code is based on [Qwen](https://github.com/QwenLM/Qwen). Standard fine-tuning was conducted on 4×A100 GPUs (80G) for about 9 hours.
 ```bash
 cd LTE/
 bash Qwen/finetune/finetune_ds.sh
@@ -43,13 +43,13 @@ bash Qwen/finetune/finetune_lora_single_gpu.sh
 ### 2. Inference Phrase
 The evaluation of our proposed LTE is based on [EasyEdit](https://github.com/zjunlp/EasyEdit).
 
-Please run the following command for experiments of LLaMA2-Chat-7B:
+Please run the following command for experiments of **LLaMA2-Chat-7B**:
 ```bash
 cd LTE/
 bash EasyEdit/run_lte_llama.sh
 ```
 
-Please run the following command for experiments of Qwen-Chat-7B:
+Please run the following command for experiments of **Qwen-Chat-7B**:
 ```bash
 cd LTE/
 bash EasyEdit/run_lte_qwen.sh
