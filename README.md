@@ -1,6 +1,6 @@
 # Learning to Edit: Aligning LLM Behavior with Knowledge Editing
 
-## How to implement
+## ⚙️ How to implement
 
 ### Requirements
 **Note: Please use Python 3.10+ for LTE.**  To get started, simply install conda and run:
