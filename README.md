@@ -3,7 +3,7 @@
 
 The training data of LTE is avaliable [here](https://huggingface.co/datasets/YuxinJiang/LTE_train_data).
 
-Fine-tuning LLaMA2-Chat-7B https://github.com/lm-sys/FastChat
+The code for fine-tuning of LLaMA2-Chat-7B is based on [FastChat](https://github.com/lm-sys/FastChat).
 
 ```bash
 cd LTE/
