@@ -1,5 +1,11 @@
 # Learning to Edit: Aligning LLM Behavior with Knowledge Editing
 
+<p align="center">
+    <br>
+    <img src="figures/method.jpg" width="1200"/>
+    <br>
+</p>
+
 ## ⚙️ How to implement
 
 ### Requirements
