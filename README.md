@@ -1,5 +1,8 @@
 # Learning to Edit: Aligning LLM Behavior with Knowledge Editing
 
+[![Github](https://img.shields.io/static/v1?logo=github&style=flat&color=pink&label=github&message=YJiangcm/LTE)](https://github.com/YJiangcm/LTE)
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-huggingface-yellow)](https://huggingface.co/datasets/YuxinJiang/LTE_train_data)
+
 We introduces a novel Learning to Edit (**LTE**) framework, designed to enhance the capability of large language models (LLMs) for effective, efficient knowledge editing.
 our LTE framework focuses on empowering LLMs to **apply** updated knowledge rather than merely memorize it, inspired by the philosophy of "_Teach a man to fish_."
 
