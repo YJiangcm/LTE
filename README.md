@@ -1,5 +1,10 @@
 # Learning to Edit: Aligning LLM Behavior with Knowledge Editing
 
+We introduces a novel Learning to Edit (**LTE**) framework, designed to enhance the capability of large language models (LLMs) for effective, efficient knowledge editing.
+our LTE framework focuses on empowering LLMs to **apply** updated knowledge rather than merely memorize it, inspired by the philosophy of "_Teach a man to fish_."
+
+As the below figure shows, LTE features a two-phase process: (i) the **Alignment Phase**, which fine-tunes LLMs on a meticulously curated parallel dataset to make reliable, in-scope edits while preserving out-of-scope information and linguistic proficiency; and (ii) the **Inference Phase**, which employs a retrieval-based mechanism for real-time and mass knowledge editing.
+
 <p align="center">
     <br>
     <img src="figures/method.jpg" width="1200"/>
