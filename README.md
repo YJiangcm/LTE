@@ -73,11 +73,11 @@ bash EasyEdit/run_lte_qwen.sh
 ## 📝 Citation
 Please cite our paper if you use the data or code in this repo.
 ```
-@misc{jiang2023followbench,
-      title={FollowBench: A Multi-level Fine-grained Constraints Following Benchmark for Large Language Models}, 
-      author={Yuxin Jiang and Yufei Wang and Xingshan Zeng and Wanjun Zhong and Liangyou Li and Fei Mi and Lifeng Shang and Xin Jiang and Qun Liu and Wei Wang},
-      year={2023},
-      eprint={2310.20410},
+@misc{jiang2024lte,
+      title={Learning to Edit: Aligning LLMs with Knowledge Editing}, 
+      author={Yuxin Jiang and Yufei Wang and Chuhan Wu and Wanjun Zhong and Xingshan Zeng and Jiahui Gao and Liangyou Li and Xin Jiang and Lifeng Shang and Ruiming Tang and Qun Liu and Wei Wang},
+      year={2024},
+      eprint={2402.11905},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
