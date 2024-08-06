@@ -10,3 +10,4 @@ flash_attn==2.2.2
 peft
 deepspeed
 fschat[model_worker,webui]
+sentence_transformers
