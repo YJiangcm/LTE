@@ -55,7 +55,7 @@ bash Qwen/finetune/finetune_lora_single_gpu.sh
 ```
 
 ### 2. Inference Phrase
-The evaluation of our proposed LTE is based on [EasyEdit](https://github.com/zjunlp/EasyEdit).
+The evaluation of our proposed LTE is based on [EasyEdit](https://github.com/zjunlp/EasyEdit). Please download [multi-qa-mpnet-base-dot-v1](https://huggingface.co/sentence-transformers/multi-qa-mpnet-base-dot-v1) and add it to "LTE/SeqEdit/multi-qa-mpnet-base-dot-v1".
 
 Please run the following command for experiments of **LLaMA2-Chat-7B**:
 ```bash
