@@ -61,12 +61,14 @@ Please run the following command for experiments of **LLaMA2-Chat-7B**:
 ```bash
 cd LTE/
 bash EasyEdit/run_lte_llama.sh
+bash SeqEdit/run_lte_llama.sh
 ```
 
 Please run the following command for experiments of **Qwen-Chat-7B**:
 ```bash
 cd LTE/
 bash EasyEdit/run_lte_qwen.sh
+bash SeqEdit/run_lte_qwen.sh
 ```
 
 
