@@ -1,0 +1,1 @@
+Please download [MQuAKE-CF](https://github.com/princeton-nlp/MQuAKE/blob/main/datasets/MQuAKE-CF.json).json and [MQuAKE-T.json](https://github.com/princeton-nlp/MQuAKE/blob/main/datasets/MQuAKE-T.json) and save them here.
