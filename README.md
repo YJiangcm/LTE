@@ -75,12 +75,29 @@ bash SeqEdit/run_lte_qwen.sh
 ## 📝 Citation
 Please cite our paper if you use the data or code in this repo.
 ```
-@misc{jiang2024lte,
-      title={Learning to Edit: Aligning LLMs with Knowledge Editing}, 
-      author={Yuxin Jiang and Yufei Wang and Chuhan Wu and Wanjun Zhong and Xingshan Zeng and Jiahui Gao and Liangyou Li and Xin Jiang and Lifeng Shang and Ruiming Tang and Qun Liu and Wei Wang},
-      year={2024},
-      eprint={2402.11905},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{jiang-etal-2024-learning,
+    title = "Learning to Edit: Aligning {LLM}s with Knowledge Editing",
+    author = "Jiang, Yuxin  and
+      Wang, Yufei  and
+      Wu, Chuhan  and
+      Zhong, Wanjun  and
+      Zeng, Xingshan  and
+      Gao, Jiahui  and
+      Li, Liangyou  and
+      Jiang, Xin  and
+      Shang, Lifeng  and
+      Tang, Ruiming  and
+      Liu, Qun  and
+      Wang, Wei",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.258",
+    pages = "4689--4705",
 }
 ```
